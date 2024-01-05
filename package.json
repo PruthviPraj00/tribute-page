@@ -1,0 +1,23 @@
+{
+  "name": "tribute-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss style1.css -o style.css",
+    "watch": "postcss style1.css -o style.css -w",
+    "tbuild": "npx tailwindcss -i style1.css -o stylet.css",
+    "twatch": "npx tailwindcss -i style1.css -o stylet.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10",
+    "tailwindcss": "^3.4.0"
+  }
+}

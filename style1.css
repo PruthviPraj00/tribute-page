@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;   
+@tailwind utilities;
+
+
+@layer components {
+    .timeline {
+      @apply relative border-l-4 border-gray-200 dark:border-gray-400
+      ml-3 py-6
+      space-y-2
+      
+    }
+    .dot{
+        @apply
+        absolute top-4 -left-3 translate-y-5
+        bg-blue-400
+        h-5 w-5 rounded-full 
+        border-2 border-white
+        hover:border-0
+        hover:ring-2 hover:ring-offset-2 hover:ring-blue-500/30
+    }
+
+    .timeline-date{
+        @apply
+        text-xs font-bold dark:text-neutral-600/30 text-neutral-800/20
+        tracking-widest
+    }
+    
+}
